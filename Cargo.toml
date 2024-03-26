@@ -1,5 +1,5 @@
 [workspace]
-members = ["field", "maybe_rayon", "plonky2", "starky", "util", "plonky2_u32", "plonky2_ecdsa", "plonky2_crypto"]
+members = ["field", "maybe_rayon", "plonky2", "starky", "util", "plonky2_u32", "plonky2_ecdsa"]
 resolver = "2"
 
 [workspace.dependencies]
@@ -17,8 +17,6 @@ unroll = { version = "0.1.5", default-features = false }
 [profile.release]
 opt-level = 3
 incremental = true
-#lto = "fat"
-#codegen-units = 1
 
 [profile.bench]
 opt-level = 3
